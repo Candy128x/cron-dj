@@ -23,7 +23,12 @@
 - => python manage.py crontab add
 - => python manage.py crontab show
 - => python manage.py crontab remove
+- => crontab -e
+- => crontab -l
 
+
+(venv) ashish@ashish-Vostro-3478:.../cron-dj$ /media/ashish/UBUNTU/var/www/html/py-proj/django/cron-dj/venv/bin/python3 /media/ashish/UBUNTU/var/www/html/py-proj/django/cron-dj/projdemo/manage.py crontab run 5dee6bc62b0f0ddb483d004736463f34
+---Hello-cron-job---
 
 ---
 - check django version

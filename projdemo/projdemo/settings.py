@@ -103,7 +103,9 @@ AUTH_PASSWORD_VALIDATORS = [
 
 
 CRONJOBS = [
-    ('*/2 * * * *', 'apple.cron.my_scheduled_job')
+    # ('*/2 * * * *', 'apple.cron.my_scheduled_job')
+    # ('*/2 * * * *', 'apple.cron.my_scheduled_job', '>> /tmp/scheduled_job.log')
+    ('2 * * * *', 'apple.cron.my_scheduled_job', '>> /tmp/scheduled_job.log')
 ]
 
 
