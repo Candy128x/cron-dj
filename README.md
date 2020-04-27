@@ -7,7 +7,7 @@
 
 
 ---
-**See Command documentation [here](NoteCommands.md)**
+**See Command's documentation [here](NoteCommands.md)**
 
 
 ---
