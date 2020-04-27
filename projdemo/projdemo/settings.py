@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django_crontab',
-    'apple'
+    'apple',
 ]
 
 MIDDLEWARE = [
@@ -77,8 +77,11 @@ WSGI_APPLICATION = 'projdemo.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'db_cron_db',
+        'USER': 'postgres',
+        'PASSWORD': 'ashishPGS',
+        'HOST': 'localhost',
     }
 }
 
@@ -103,9 +106,9 @@ AUTH_PASSWORD_VALIDATORS = [
 
 
 CRONJOBS = [
-    # ('*/2 * * * *', 'apple.cron.my_scheduled_job')
-    # ('*/2 * * * *', 'apple.cron.my_scheduled_job', '>> /tmp/scheduled_job.log')
-    ('2 * * * *', 'apple.cron.my_scheduled_job', '>> /tmp/scheduled_job.log')
+    # ('*/2 * * * *', 'apple.cron.my_scheduled_job'),
+    # ('*/2 * * * *', 'apple.cron.my_scheduled_job', '>> /tmp/scheduled_job.log'),
+    ('*/2 * * * *', 'apple.cron.my_scheduled_job', '>> /tmp/scheduled_job.log'),
 ]
 
 
