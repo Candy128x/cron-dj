@@ -8,3 +8,11 @@
 
 ---
 ### For Command's info open NoteCommands.md file
+
+
+---
+## Django Welcome Page :)
+<kbd><img src="/imgs-readme/Screenshot_from_2020-04-27_22-51-54.png"></img></kbd>
+
+
+---
