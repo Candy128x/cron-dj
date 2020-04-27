@@ -7,7 +7,7 @@
 
 
 ---
-### For Command's info open NoteCommands.md file
+**See Command documentation [here](NoteCommands.md)**
 
 
 ---
