@@ -1,0 +1,12 @@
+#--GITIGNORE--
+#.gitignore
+*.bash
+.idea/
+.vscode/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*/*/migrations/*
+*/media/testcase/*
+.env
